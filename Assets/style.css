@@ -5,12 +5,16 @@ body {
 }
 
 textarea {
-  background: transparent;
+  background: wheat;
   border: none;
   resize: none;
   color: #000000;
   border-left: 1px solid black;
   padding: 10px;
+}
+
+div :hover{
+background-color: #77dd77;
 }
 
 .jumbotron {
@@ -25,15 +29,28 @@ textarea {
   white-space: pre-wrap;
 }
 
+#saveBtnBruh {
+  border-left: 5px solid black;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+  border-right: 5px solid black;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: #06aed5;
+  color: purple;
+  text-align: center;
+}
+
 .time-block {
   text-align: center;
-  border-radius: 15px;
+  border-radius: 20px;
+  border: 2px solid black;
 }
 
 .row {
   white-space: pre-wrap;
   height: 80px;
-  border-top: 1px solid white;
+  border-top: 1px solid rgb(0, 0, 0);
 }
 
 .hour {
@@ -44,7 +61,7 @@ textarea {
 
 .past {
   background-color: #d3d3d3;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .present {
@@ -54,18 +71,19 @@ textarea {
 
 .future {
   background-color: #77dd77;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
-.saveBtn {
-  border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-color: #06aed5;
-  color: white;
-}
 
+/* 
 .saveBtn i:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
+} */
+/* { font-size: 1.4em; }
+.ui-selecting{background: #FECA40; 
 }
+.ui-selected{ background: #F39814; color: white;} 
+
+/* .selectable {list-style-type: none; margin: 0; padding: 0; width: 60%;} */
+/* li { margin: 3px; padding: 0.4em; font-size: 1.4em; height: 18px; } */ 
