@@ -53,37 +53,3 @@ saveButton.addEventListener("click", function (event) {
   event.preventDefault();
 
 })
-// function saveInput(){
-//   var idiotsInput = localStorage.getItem('Some text...');
-//   localStorage.setItem('myText', idiotsInput);
-// }
-
-// function get() {
-//   var storedValue = localStorage.getItem('text');
-//   if(storedValue) {
-//       document.getElementById('textfield').value = storedValue;
-//   }
-// }
-// var a = moment().toString();
-// document.getElementById("todaysdate") = a
-
-// console.log("time");
-
-
-// var weekDay = moment("1-1-2022", "M-D-YYYY").format("ddd MMM Do, YYYY");
-// $("#2a").text(weekDay);
-
-
-// $( function() {
-//     $( "#selectable" ).selectable();
-//  }
-// trying to set up local storage
-// var UUP = ["bruh", "wtf"];
-
-// let inputObj = JSON.stringify(UUP);
-
-// localStorage.setItem("UUP", inputObj);
-
-// let inputObjBack = JSON.parse(localStorage.getItem(UUP));
-
-// console.log(inputObjBack);
