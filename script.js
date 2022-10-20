@@ -24,11 +24,12 @@ function renderTimeBlocks() {
     else{
       time += " AM";
     }
+    var savedNote = localStorage.getItem(time) ?? ""; 
     var thisCard = `
     <div class="time-block row">
       <h3 class="col-1">${time}</h3>
-      <textarea id="inputID"class="inputI col-10"></textarea>
-        <button class="save col-1">SAVE</button>
+      <textarea id="inputID"class="inputI col-10" placeholder="Enter Stuff">${savedNote}</textarea>
+        <button class="save col-1" data-time="${time}">SAVE</button>
     </div> 
 `
 timeBlock.innerHTML += thisCard
@@ -43,8 +44,9 @@ let saveButtons = document.getElementsByClassName("save");
 for (let i = 0; i < saveButtons.length; i++) {
   const element = saveButtons[i];
   element.addEventListener("click", function(e){
-    var txt = $("#inputID").val();
-
+    var key = e.target.dataset.time 
+    var txt = e.target.parentElement.children[1].value
+  console.log(e);
   // window.localStorage.setItem('localstuff', JSON.stringify(inputID));
   // data = JSON.parse(window.localStorage.getItem('localstuff'));
   //   console.log(e);
@@ -52,8 +54,8 @@ for (let i = 0; i < saveButtons.length; i++) {
     // alert(txt);
     // console.log(txt);
 
-    window.localStorage.setItem("ketItem", txt);
-    window.localStorage.getItem("keyItem");
+    localStorage.setItem(key, txt);
+    
   })
 }
 };    
