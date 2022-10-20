@@ -1,4 +1,4 @@
-Challenge Number 4 - Making a Multiple choice quiz
+Challenge Number 5 - Making a Daily Planner
 
 link to the GitHub repository: https://github.com/Arjunk-g/Arjunk-g-Arjun-Gupta-Challenge-05
 
