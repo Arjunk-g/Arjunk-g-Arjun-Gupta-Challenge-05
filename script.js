@@ -1,8 +1,6 @@
 //just console log SOMETHING the moment time 
-// var idiotInput = document.querySelectorAll(idiotInput);
 var saveButton = document.getElementById("save");
-var timeBlock = document.getElementById("TimeBlocks")
-
+var timeBlock = document.getElementById("TimeBlocks");
 var now = moment();
 console.log(now);
 
@@ -29,7 +27,7 @@ function renderTimeBlocks() {
     var thisCard = `
     <div class="time-block row">
       <h3 class="col-1">${time}</h3>
-      <textarea class="inputI col-10"></textarea>
+      <textarea id="inputID"class="inputI col-10"></textarea>
         <button class="save col-1">SAVE</button>
     </div> 
 `
@@ -37,19 +35,27 @@ timeBlock.innerHTML += thisCard
   }
 addListeners();
 }
+
 renderTimeBlocks();
+
 function addListeners() {
 let saveButtons = document.getElementsByClassName("save");
 for (let i = 0; i < saveButtons.length; i++) {
   const element = saveButtons[i];
   element.addEventListener("click", function(e){
-    console.log(e);
+    var txt = $("#inputID").val();
+
+  // window.localStorage.setItem('localstuff', JSON.stringify(inputID));
+  // data = JSON.parse(window.localStorage.getItem('localstuff'));
+  //   console.log(e);
+  //   console.log(data);
+    // alert(txt);
+    // console.log(txt);
+
+    window.localStorage.setItem("ketItem", txt);
+    window.localStorage.getItem("keyItem");
   })
 }
-};
+};    
 
-
-saveButton.addEventListener("click", function (event) {
-  event.preventDefault();
-
-})
+console.log(localStorage);
